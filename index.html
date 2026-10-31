@@ -1,978 +1,485 @@
 <!doctype html>
 <html lang="en">
-<style>
-  .testi_text p {
-    overflow: hidden;
-    max-height: 100px;
-    transition: max-height 0.3s ease;
-  }
-
-  .testi_text.expanded p {
-    max-height: 1000px; /* Arbitrary large value to show full text */
-  }
-
-  .show-more {
-    color: #007bff;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-</style>
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
-	<meta name="description" content="Mian Hassan Sohail is a Senior Unity Game Developer and Team Lead. Explore his portfolio, game development skills, Unity projects, VR, AR, and metaverse experience.">
-	<meta name="keywords" content="Mian Hassan Sohail, Unity Developer, Game Developer, Team Lead, VR, AR, Metaverse, Multiplayer, Web3, Mobile Games, Portfolio, C#, XANA, Noborderz">
-	<meta name="author" content="Mian Hassan Sohail">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mian Hassan Sohail, Senior Unity Game Developer</title>
+  <meta name="description" content="Mian Hassan Sohail is a Unity Lead and Senior Unity Game Developer with 9+ years building Meta Quest VR, mobile, multiplayer and metaverse games.">
+  <meta name="keywords" content="Mian Hassan Sohail, Unity Developer, Game Developer, Team Lead, VR, AR, Metaverse, Multiplayer, Web3, Mobile Games, Portfolio, C#, XANA">
+  <meta name="author" content="Mian Hassan Sohail">
+  <meta name="theme-color" content="#000000">
+  <link rel="canonical" href="https://www.mianhassansohail.com/">
+  <link rel="icon" href="img/favicon.png" type="image/png">
 
-	<title>Hassan's Portfolio</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
-	<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "Person",
-		  "name": "Mian Hassan Sohail",
-		  "jobTitle": "Senior Unity Game Developer, Team Lead",
-		  "url": "https://www.mianhassansohail.com/",
-		  "sameAs": [
-			"https://www.linkedin.com/in/mian-hassan-sohail/",
-			"https://github.com/HassanSohail000",
-			"https://github.com/MianHassanSohail",
-			"https://www.instagram.com/hassansohail00/",
-			"https://www.facebook.com/hassansohail00/"
-		  ],
-		  "description": "Portfolio of Mian Hassan Sohail, Senior Unity Game Developer and Team Lead. Specializing in Unity, VR, AR, multiplayer, and metaverse projects."
-		}
-	</script>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mianhassansohail.com/">
+  <meta property="og:title" content="Mian Hassan Sohail, Senior Unity Game Developer">
+  <meta property="og:description" content="Unity games for mobile, VR/AR, PC and the metaverse.">
+  <meta property="og:image" content="https://www.mianhassansohail.com/assets/media/xana.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,600..900;1,600..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mian Hassan Sohail",
+    "jobTitle": "Unity Lead",
+    "email": "mailto:hassansohail@live.com",
+    "url": "https://www.mianhassansohail.com/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" },
+    "sameAs": [
+      "https://www.linkedin.com/in/mian-hassan-sohail/",
+      "https://github.com/HassanSohail000",
+      "https://www.instagram.com/hassansohail00/",
+      "https://www.facebook.com/hassansohail00/"
+    ],
+    "description": "Portfolio of Mian Hassan Sohail, Senior Unity Game Developer. Mobile, VR/AR, multiplayer and metaverse games."
+  }
+  </script>
 </head>
 
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm0 1 9 7 9-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 2h8l5 5v15H6V2Zm8 0v5h5M9 13h7M9 17h7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  </svg>
 
-	<!--================ Start Header Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-						   <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-							<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-							<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-							<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-							<li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-							<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<!--================ End Header Area =================-->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-	<!--================ Start Home Banner Area =================-->
-	<section class="home_banner_area" id="home">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
-						<div class="banner_content">
-							<h3 class="text-uppercase">Hello</h3>
-							<h1 class="text-uppercase">I am Mian Hassan Sohail</h1>
-							<h5 class="text-uppercase">Senior Unity Game developer</h5>
-							<div class="d-flex align-items-center">
-								<a class="primary_btn" href="#contact"><span>Hire Me</span></a>
-								<a class="primary_btn tr-bg" href="https://drive.google.com/file/d/1YBHOxg4taBmkWxgwR0Iu7D_JRCxkXP0E/view?usp=sharing"><span>Get CV</span></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-5">
-						<div class="home_right_img">
-							<img class="" src="img/banner/home-right.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Home Banner Area =================-->
-
-	<!--================ Start About Us Area =================-->
- <section class="about_area section_gap" id="about" style="padding:0px">
-		<div class="container">
-			<div class="row justify-content-start align-items-center">
-				<div class="col-lg-5">
-					<div class="about_img">
-						<img class="" src="img/about-us.png" alt="">
-					</div>
-				</div>
-
-				<div class="offset-lg-1 col-lg-5">
-					<div class="main_title text-left">
-						<h2>let me Introduce myself</h2>
-						<p>
-							Hi, I'm Mian Hassan Sohail — a Unity developer with over 8 years of experience creating games and interactive experiences across mobile, VR, AR, and the metaverse.
-							I’ve developed everything from hyper-casual hits to complex multiplayer systems, always focused on making gameplay smooth, fun, and engaging. teractive experiences that people love to play.
-							I’ve worked on everything from fun, fast-paced mobile games to immersive VR and multiplayer worlds. 
-						</p>
-						<p>
-							Currently, I’m a core developer at Noborderz Innovation, where I help build the XANA metaverse, combining real-time systems with Web3 integration. Game development isn’t just my profession —
-							it’s something I truly enjoy, and I’m always excited to bring new ideas to life.
-						</p>
-						<a class="primary_btn" href="https://drive.google.com/file/d/1VqpubVpT-mvNAjoiEENodOFLCrH_NXCl/view?usp=sharing"><span>Download CV</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End About Us Area =================-->
-	<!--================ Start Skills Area =================-->
-	<section class="skills_area section_gap" id="skills" style="padding-top :100px">
-  <div class="row justify-content-center">
-    <div class="col-lg-8 text-center">
-      <div class="main_title">
-        <h2 >Skills</h2>
-		<p>From Code to Controller – These Skills Power My Games</p>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Main">
+      <a class="wordmark" href="#top">Hassan Sohail</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#work">Games</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a class="btn btn-accent" href="#contact">Contact</a>
       </div>
-    </div>
+    </nav>
+  </header>
+
+  <div class="thumb-bar">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <a class="btn btn-accent" href="#contact">Contact</a>
   </div>
 
-  <!-- Remove container from here -->
-  <div class="skills-carousel-wrapper">
-    <div class="skills-carousel-track d-flex align-items-center justify-content-start px-5">
-      <img src="img/skills/unity.png" alt="Unity" class="mx-3" height="64">
-      <img src="img/skills/csharp.png" alt="csharp" class="mx-3" height="64">
-      <img src="img/skills/git.png" alt="git" class="mx-3" height="64">
-      <img src="img/skills/photon.png" alt="photon" class="mx-3" height="64">
-	  <img src="img/skills/firebase.png" alt="firebase" class="mx-3" height="64">
-	  <img src="img/skills/figma.png" alt="figma" class="mx-3" height="64">
-      <img src="img/skills/notion.png" alt="notion" class="mx-3" height="64">
-      <img src="img/skills/slack.png" alt="slack" class="mx-3" height="64">
-      <img src="img/skills/ps.png" alt="Photoshop" class="mx-3" height="64">
-      <img src="img/skills/blender.png" alt="Blender" class="mx-3" height="64">
-	  <img src="img/skills/api.png" alt="api" class="mx-3" height="64">
-	  <img src="img/skills/socket_io.png" alt="api" class="mx-3" height="64">
-	  <img src="img/skills/aws.png" alt="api" class="mx-3" height="64">
-	  <img src="img/skills/jira.png" alt="jira" class="mx-3" height="64">
-	  <img src="img/skills/swagger.png" alt="swagger" class="mx-3" height="64">
-	  <img src="img/skills/AI.png" alt="ai" class="mx-3" height="64">
-	  <img src="img/skills/html.png" alt="html" class="mx-3" height="64">
-	  <img src="img/skills/net.png" alt="net" class="mx-3" height="64">
-	  <img src="img/skills/asp.png" alt="net" class="mx-3" height="64">
+  <main id="main">
+    <!-- Hero: name, statement, showreel -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero-head grid">
+          <h1 id="hero-title" class="display">Mian Hassan Sohail</h1>
+          <p class="hero-statement">Unity lead. Nine years shipping mobile, multiplayer and metaverse games, now building VR for Meta Quest.</p>
+          <div class="hero-actions">
+            <a class="btn btn-accent" href="#work">See the games</a>
+            <a class="btn btn-quiet" href="https://drive.google.com/file/d/1YBHOxg4taBmkWxgwR0Iu7D_JRCxkXP0E/view?usp=sharing" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
 
-      <!-- Duplicated for looping effect -->
-     <img src="img/skills/unity.png" alt="Unity" class="mx-3" height="64">
-      <img src="img/skills/csharp.png" alt="csharp" class="mx-3" height="64">
-      <img src="img/skills/git.png" alt="git" class="mx-3" height="64">
-      <img src="img/skills/photon.png" alt="photon" class="mx-3" height="64">
-	  <img src="img/skills/firebase.png" alt="firebase" class="mx-3" height="64">
-	   <img src="img/skills/figma.png" alt="figma" class="mx-3" height="64">
-      <img src="img/skills/notion.png" alt="notion" class="mx-3" height="64">
-      <img src="img/skills/slack.png" alt="slack" class="mx-3" height="64">
-      <img src="img/skills/ps.png" alt="Photoshop" class="mx-3" height="64">
-      <img src="img/skills/blender.png" alt="Blender" class="mx-3" height="64">
-	  <img src="img/skills/api.png" alt="api" class="mx-3" height="64">
-	  <img src="img/skills/socket_io.png" alt="api" class="mx-3" height="64">
-	  <img src="img/skills/aws.png" alt="api" class="mx-3" height="64">
-	  <img src="img/skills/jira.png" alt="jira" class="mx-3" height="64">
-	  <img src="img/skills/swagger.png" alt="swagger" class="mx-3" height="64">
-	  <img src="img/skills/AI.png" alt="ai" class="mx-3" height="64">
-	  <img src="img/skills/html.png" alt="html" class="mx-3" height="64">
-	  <img src="img/skills/net.png" alt="net" class="mx-3" height="64">
-	  <img src="img/skills/asp.png" alt="net" class="mx-3" height="64">
+        <figure class="reel">
+          <div class="reel-screen">
+            <video class="reel-video" src="assets/media/xana.mp4" poster="assets/media/xana.jpg" autoplay muted playsinline preload="auto" aria-label="Showreel of games by Hassan"></video>
+          </div>
+          <figcaption class="reel-bar">
+            <span class="reel-caption">Now playing: <strong>XANA Metaverse</strong></span>
+            <span class="reel-controls">
+              <button class="reel-btn" type="button" data-reel="toggle" aria-pressed="false">Pause</button>
+              <button class="reel-btn" type="button" data-reel="next">Next game</button>
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Games: select screen -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-intro grid">
+          <h2 id="work-title">Games I've built</h2>
+          <p>Meta Quest titles, store releases, a metaverse and VR experiments. Pick a title to see it running.</p>
+        </div>
+
+        <div class="select">
+          <div class="stage" id="stage" aria-live="polite">
+            <div class="stage-media">
+              <img class="stage-img" src="assets/media/rift-breach.jpg" alt="">
+              <video class="stage-video" muted loop playsinline preload="none"></video>
+            </div>
+            <div class="stage-info">
+              <h3 class="stage-title">Rift Breach: Survival</h3>
+              <p class="stage-meta"></p>
+              <p class="stage-desc"></p>
+              <p class="stage-link"></p>
+            </div>
+          </div>
+
+          <div class="game-list">
+            <h3 class="group-title">Meta Quest VR, Titanz Games</h3>
+            <ul>
+              <li class="game" data-video="assets/media/rift-breach.mp4" data-poster="assets/media/rift-breach.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">Rift Breach: Survival</span><span class="game-tags">Open-world VR survival</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/rift-breach.jpg" alt="Rift Breach: Survival intro, a stranded survivor on a moonlit beach" loading="lazy">
+                  <p class="game-meta">Meta Quest. Coming soon.</p>
+                  <p class="game-desc">An open-world survival sandbox for standalone VR. You wake on a moonlit island after a helicopter crash and fight to survive, up to boss battles.</p>
+                </div>
+              </li>
+              <li class="game" data-poster="assets/media/skyline-assassin.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">Skyline Assassin</span><span class="game-tags">VR stealth and parkour</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/skyline-assassin.jpg" alt="Skyline Assassin rooftop view over the city" loading="lazy">
+                  <p class="game-meta">Meta Quest. Pre-order now, coming winter 2026.</p>
+                  <p class="game-desc">A first-person stealth game set across layered rooftop maps: climb and grab ledges by hand, drop on targets with a hidden blade, and reload a suppressed pistol manually.</p>
+                  <p><a class="text-link" href="https://www.meta.com/en-gb/experiences/skyline-assassin/1175940798938908/" target="_blank" rel="noopener">Pre-order on Meta Quest</a></p>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="group-title">Metaverse and Web3</h3>
+            <ul>
+              <li class="game" data-video="assets/media/xana.mp4" data-poster="assets/media/xana.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">XANA Metaverse</span><span class="game-tags">Multiplayer, Web3, VR, WebGL</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/xana.jpg" alt="XANA metaverse" loading="lazy">
+                  <p class="game-meta">Mobile, PC, WebGL and VR. Noborderz Innovations, 2022 to 2025.</p>
+                  <p class="game-desc">A cross-platform metaverse of multiplayer worlds, live concerts and games. I built its multiplayer gameplay, Web3 wallet login, spatial audio for concerts of 1,000+ players, an AI selfie-to-avatar generator and in-world video streaming.</p>
+                  <p><a class="text-link" href="https://xana.net" target="_blank" rel="noopener">Visit xana.net</a></p>
+                </div>
+              </li>
+              <li class="game" data-video="assets/media/penpenz.mp4" data-poster="assets/media/penpenz.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">Penpenz</span><span class="game-tags">Party racing, Web3</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/penpenz.jpg" alt="Penpenz gameplay" loading="lazy">
+                  <p class="game-meta">Multiplayer party game.</p>
+                  <p class="game-desc">A party racing game with Web3 integration.</p>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="group-title">Mobile</h3>
+            <ul>
+              <li class="game" data-video="assets/media/paintball.mp4" data-poster="assets/media/paintball.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">Paintball Battle Arena</span><span class="game-tags">5v5 online PvP shooter</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/paintball.jpg" alt="Paintball Battle Arena gameplay" loading="lazy">
+                  <p class="game-meta">Android.</p>
+                  <p class="game-desc">Team-based paintball with 5v5 online PvP matches.</p>
+                  <p><a class="text-link" href="https://play.google.com/store/apps/details?id=com.shockwavegames.paintball.battle.arena" target="_blank" rel="noopener">Get it on Google Play</a></p>
+                </div>
+              </li>
+              <li class="game" data-video="assets/media/car-dealer.mp4" data-poster="assets/media/car-dealer.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">Car Dealership Simulator</span><span class="game-tags">Business simulation</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/car-dealer.jpg" alt="Car Dealership Simulator gameplay" loading="lazy">
+                  <p class="game-meta">Android.</p>
+                  <p class="game-desc">Buy, fix up and sell cars to grow a dealership business.</p>
+                  <p><a class="text-link" href="https://play.google.com/store/apps/details?id=com.shockwavegames.car.dealer.job.simulator" target="_blank" rel="noopener">Get it on Google Play</a></p>
+                </div>
+              </li>
+              <li class="game" data-video="assets/media/epic-war.mp4" data-poster="assets/media/epic-war.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">Epic War Simulator</span><span class="game-tags">Battle strategy</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/epic-war.jpg" alt="Epic War Simulator gameplay" loading="lazy">
+                  <p class="game-meta">Android.</p>
+                  <p class="game-desc">Large-scale army battles: place your forces and watch them clash.</p>
+                  <p><a class="text-link" href="https://play.google.com/store/apps/details?id=com.shockwavegames.epicbattle.worldofwar" target="_blank" rel="noopener">Get it on Google Play</a></p>
+                </div>
+              </li>
+              <li class="game" data-video="assets/media/border-patrol.mp4" data-poster="assets/media/border-patrol.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">Border Patrol Police</span><span class="game-tags">Simulation, action</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/border-patrol.jpg" alt="Border Patrol Police Game gameplay" loading="lazy">
+                  <p class="game-meta">Android.</p>
+                  <p class="game-desc">Run a border checkpoint: inspect vehicles, catch smugglers and keep order.</p>
+                  <p><a class="text-link" href="https://play.google.com/store/apps/details?id=com.shockwavegames.border.patrol.police.simulator" target="_blank" rel="noopener">Get it on Google Play</a></p>
+                </div>
+              </li>
+              <li class="game" data-video="assets/media/car-thief.mp4" data-poster="assets/media/car-thief.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">Car Thief Simulator</span><span class="game-tags">Driving action</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/car-thief.jpg" alt="Car Thief Simulator gameplay" loading="lazy">
+                  <p class="game-meta">Android.</p>
+                  <p class="game-desc">Steal, race and escape in an open-world driving game.</p>
+                  <p><a class="text-link" href="https://play.google.com/store/apps/details?id=com.shockwavegames.car.thief.simulator" target="_blank" rel="noopener">Get it on Google Play</a></p>
+                </div>
+              </li>
+              <li class="game" data-video="assets/media/blade-spinner.mp4" data-poster="assets/media/blade-spinner.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">Blade Spinner Arena</span><span class="game-tags">Arcade battler</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/blade-spinner.jpg" alt="Blade Fidget Spinner Arena gameplay" loading="lazy">
+                  <p class="game-meta">Android.</p>
+                  <p class="game-desc">Fast arcade battles: spin, upgrade and knock rivals out of the arena.</p>
+                  <p><a class="text-link" href="https://play.google.com/store/apps/details?id=com.blackfootgames.blade.spin.battle.arena" target="_blank" rel="noopener">Get it on Google Play</a></p>
+                </div>
+              </li>
+              <li class="game" data-video="assets/media/crypto-pc.mp4" data-poster="assets/media/crypto-pc.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">Crypto Mining PC Builder</span><span class="game-tags">Tycoon simulation</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/crypto-pc.jpg" alt="Crypto Mining PC Builder Sim gameplay" loading="lazy">
+                  <p class="game-meta">Mobile.</p>
+                  <p class="game-desc">Assemble mining rigs, manage hardware and grow a crypto operation.</p>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="group-title">Earlier VR and AR</h3>
+            <ul>
+              <li class="game" data-poster="assets/media/monster-hunter-vr.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">Monster Hunter VR</span><span class="game-tags">VR horror shooter</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/monster-hunter-vr.jpg" alt="Monster Hunter VR" loading="lazy">
+                  <p class="game-meta">VR.</p>
+                  <p class="game-desc">Hunt monsters in dark, immersive VR environments.</p>
+                </div>
+              </li>
+              <li class="game" data-poster="assets/media/arc-vision.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">ARC Vision</span><span class="game-tags">VR architecture</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/arc-vision.jpg" alt="ARC Vision VR architecture walkthrough" loading="lazy">
+                  <p class="game-meta">Samsung Gear VR and Google Cardboard. Arc Vision.</p>
+                  <p class="game-desc">Walk through buildings before they are built.</p>
+                </div>
+              </li>
+              <li class="game" data-poster="assets/media/vr-rc.jpg">
+                <button class="game-pick" type="button" aria-controls="stage"><span class="game-name">VR RC with Leap Motion</span><span class="game-tags">Hand tracking, hardware</span></button>
+                <div class="game-detail">
+                  <img src="assets/media/vr-rc.jpg" alt="VR RC car controlled with Leap Motion" loading="lazy">
+                  <p class="game-meta">VR with Leap Motion.</p>
+                  <p class="game-desc">Drive a real RC car with hand gestures and watch its camera feed in VR.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience field-light" id="experience" aria-labelledby="exp-title">
+      <div class="wrap">
+        <div class="section-intro grid">
+          <h2 id="exp-title">Experience</h2>
+          <p>From VR architecture in 2017 to leading a team of ten, building a metaverse and now leading Meta Quest games.</p>
+        </div>
+
+        <ol class="jobs">
+          <li class="job grid">
+            <div class="job-when"><p class="job-dates">Dec 2025 to now</p><p class="job-org">Titanz Games, Lahore</p></div>
+            <div class="job-what">
+              <h3>Unity Lead</h3>
+              <ul>
+                <li>Built the Meta Quest titles Skyline Assassin, Crunch Time and Rift Breach: Survival, and manage their Meta Horizon Store listings.</li>
+                <li>VR built on OpenXR and the Meta XR SDK: physics hand poses, climbing and grabbing, smooth and teleport locomotion, held at 72 to 90 FPS on standalone headsets.</li>
+                <li>Built Novum, a metaverse for the web in Unity WebGL.</li>
+                <li>Made the PC games Shotgun 2D, Car Racing and Horror Lab, plus simulation, puzzle and arcade games for iOS and Android.</li>
+                <li>Co-develop games with partner studio Spark Gamez.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job grid">
+            <div class="job-when"><p class="job-dates">Jul 2022 to Nov 2025</p><p class="job-org">Noborderz Innovations, Lahore</p></div>
+            <div class="job-what">
+              <h3>Senior Unity Developer</h3>
+              <ul>
+                <li>Named Employee of the Year 2022.</li>
+                <li>Built multiplayer gameplay systems for the XANA metaverse, raising session length by 25%.</li>
+                <li>Added blockchain wallet login and Web3 authentication, lifting returning users by 40%.</li>
+                <li>Made spatial audio for virtual concerts with 1,000+ players at once.</li>
+                <li>Built an AI avatar generator that turns a selfie into a rigged character, halving setup time.</li>
+                <li>Cut loading times by 30% with Addressables, and built real-time face morphing, in-world video streaming, shops and social features.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job grid">
+            <div class="job-when"><p class="job-dates">Jan 2022 to Jun 2022</p><p class="job-org">Raven Interactive, Lahore</p></div>
+            <div class="job-what">
+              <h3>Team Lead</h3>
+              <ul>
+                <li>Led a team of 10+ developers across architecture, feature planning and delivery.</li>
+                <li>Led ad and analytics integrations that raised in-app revenue across several titles.</li>
+                <li>Reworked sprint planning, raising team output by 25%, and worked with international publishers.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job grid">
+            <div class="job-when"><p class="job-dates">Jan 2019 to Dec 2021</p><p class="job-org">Raven Interactive, Lahore</p></div>
+            <div class="job-what">
+              <h3>Senior Game Developer</h3>
+              <ul>
+                <li>Built action, RPG, simulation, arcade and hyper-casual games from scratch.</li>
+                <li>Made a VR shooter for HTC Vive with custom locomotion, VFX and sound.</li>
+                <li>Optimized games with profiling, batching and efficient shaders.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job grid">
+            <div class="job-when"><p class="job-dates">Jul 2018 to Feb 2019</p><p class="job-org">ICAW, Lahore</p></div>
+            <div class="job-what">
+              <h3>Unity Developer</h3>
+              <ul>
+                <li>Built 2D physics puzzle, merge, cooking, fashion and hyper-casual games.</li>
+                <li>Shipped them end to end to Google Play and the App Store, with AdMob and Unity Ads.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job grid">
+            <div class="job-when"><p class="job-dates">Apr 2017 to Jan 2018</p><p class="job-org">Arc Vision, Lahore</p></div>
+            <div class="job-what">
+              <h3>Unity Developer</h3>
+              <ul>
+                <li>Built VR architecture walkthroughs for Samsung Gear VR and Google Cardboard.</li>
+                <li>Wrote an internal SDK that turns 360° images into interactive VR scenes.</li>
+                <li>Built AR training and visualization apps with ARKit.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job grid">
+            <div class="job-when"><p class="job-dates">2013 to 2017</p><p class="job-org">University of South Asia, Lahore</p></div>
+            <div class="job-what">
+              <h3>BS Computer Science, GPA 3.75 / 4.00</h3>
+              <p>Published research: <em>Challenges and Limitations in Implementation of Swarm Intelligence for Robotics</em>.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- About and toolkit -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid grid">
+        <div class="about-main">
+          <h2 id="about-title">About me</h2>
+          <p class="statement">I make gameplay that feels smooth, fun and alive, and I lead the teams that ship it.</p>
+          <p>I started with VR architecture in 2017 and now lead Meta Quest games at Titanz Games. In between I built hyper-casual hits, 5v5 shooters and a metaverse with concerts for 1,000+ players. I care about clean, fast C#, multiplayer that holds up under load, and games that run well on low-end phones.</p>
+          <p>Game development isn't just my job. I truly enjoy it, and I'm always excited to bring new ideas to life.</p>
+        </div>
+        <picture class="about-portrait">
+          <source srcset="assets/media/hassan-bw.webp" type="image/webp">
+          <img src="assets/media/hassan-bw.png" alt="Portrait of Mian Hassan Sohail in a light blazer and black turtleneck" loading="lazy" width="608" height="619">
+        </picture>
+
+        <div class="toolkit">
+          <h3>Toolkit</h3>
+          <dl>
+            <div><dt>Engine and code</dt><dd>Unity, C#, .NET, ASP.NET, URP, Addressables, Asset Bundles, physics and animation systems</dd></div>
+            <div><dt>Multiplayer and backend</dt><dd>Photon PUN, Photon Fusion, Photon Voice, Socket.IO, Firebase, AWS, REST APIs, leaderboards and matchmaking</dd></div>
+            <div><dt>VR and AR</dt><dd>Meta Quest, OpenXR, Meta XR SDK, XR Interaction Toolkit, XR Hands, Auto Hand, Hurricane VR, AR Foundation, ARCore, ARKit, HTC Vive</dd></div>
+            <div><dt>Platforms</dt><dd>Android, iOS, Windows, WebGL, Meta Horizon Store, Google Play, App Store, Web3Auth, ChainSafe</dd></div>
+            <div><dt>Tools and team</dt><dd>Git, Jira, Notion, Figma, Blender, Photoshop, profiling, Agile sprint planning, mentoring</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials: a slideshow once the script runs, a plain list without it -->
+    <section class="testimonials field-light" id="testimonials" aria-labelledby="testi-title">
+      <div class="wrap">
+        <h2 id="testi-title">What people I've worked with say</h2>
+
+        <div class="carousel" role="region" aria-roledescription="carousel" aria-labelledby="testi-title">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <div class="slides" aria-live="polite">
+            <figure class="slide" aria-roledescription="slide" aria-label="1 of 11">
+              <blockquote class="slide-quote"><p>Hassan is, without a doubt, one of the most talented and dedicated developers I have ever worked with. Beyond his technical skills, Hassan is a natural leader and an excellent mentor.</p></blockquote>
+              <figcaption class="person"><img src="img/testimonials/Sannan.jpeg" alt="" loading="lazy" width="55" height="55"><span><strong class="person-name">Sannan Zahid</strong>Noborderz Innovations</span></figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="slide" aria-label="2 of 11">
+              <blockquote class="slide-quote"><p>I have consistently been impressed by his exceptional problem-solving abilities, discipline, and punctuality. He consistently completes tasks on time and maintains a high standard of work.</p></blockquote>
+              <figcaption class="person"><img src="img/testimonials/hamza.png" alt="" loading="lazy" width="55" height="55"><span><strong class="person-name">Hamza Abbasi</strong>Project Manager</span></figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="slide" aria-label="3 of 11">
+              <blockquote class="slide-quote"><p>His expertise in Unity, C#, and logic building is unparalleled. His ability to step up as a “one-man army” when needed has saved the day more than once.</p></blockquote>
+              <figcaption class="person"><img src="img/testimonials/ali.jpeg" alt="" loading="lazy" width="55" height="55"><span><strong class="person-name">Ali Hamza</strong>Game development team</span></figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="slide" aria-label="4 of 11">
+              <blockquote class="slide-quote"><p>His technical skills are top-notch, but his team spirit and problem-solving abilities truly set him apart.</p></blockquote>
+              <figcaption class="person"><img src="img/testimonials/OSama.jpeg" alt="" loading="lazy" width="55" height="55"><span><strong class="person-name">Osama Anwar</strong>Raven Games</span></figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="slide" aria-label="5 of 11">
+              <blockquote class="slide-quote"><p>His expertise in both mobile game development and cutting-edge metaverse projects is truly impressive. His contributions to our metaverse project were invaluable, from concept to execution.</p></blockquote>
+              <figcaption class="person"><img src="img/testimonials/1744558109275.jpeg" alt="" loading="lazy" width="55" height="55"><span><strong class="person-name">Muhammad Mubasher</strong>Metaverse project</span></figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="slide" aria-label="6 of 11">
+              <blockquote class="slide-quote"><p>He’s not only highly skilled in his domain but is also adept at offering multiple solutions to a single problem, ensuring that the best course of action is always taken.</p></blockquote>
+              <figcaption class="person"><img src="img/testimonials/waqas.jpg" alt="" loading="lazy" width="55" height="55"><span><strong class="person-name">Waqas Ahmed</strong>Colleague</span></figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="slide" aria-label="7 of 11">
+              <blockquote class="slide-quote"><p>I’ve consistently been impressed by his exceptional ability to quickly grasp complex concepts and build robust, logical solutions.</p></blockquote>
+              <figcaption class="person"><img src="img/testimonials/Zubair.png" alt="" loading="lazy" width="55" height="55"><span><strong class="person-name">Zubair Hayat</strong>Colleague</span></figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="slide" aria-label="8 of 11">
+              <blockquote class="slide-quote"><p>Hassan is not only a genius when it comes to game development, but he is also incredibly punctual and reliable.</p></blockquote>
+              <figcaption class="person"><img src="img/testimonials/anees.jpeg" alt="" loading="lazy" width="55" height="55"><span><strong class="person-name">Anees Khan</strong>Colleague</span></figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="slide" aria-label="9 of 11">
+              <blockquote class="slide-quote"><p>He was a hardworking, dedicated and very talented team lead. He mentored me and taught me a lot.</p></blockquote>
+              <figcaption class="person"><img src="img/testimonials/1742742326239.jpeg" alt="" loading="lazy" width="55" height="55"><span><strong class="person-name">Muhammad Hassaan</strong>Raven Interactive</span></figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="slide" aria-label="10 of 11">
+              <blockquote class="slide-quote"><p>Hassan is an expert in his field and a complete package for anyone who needs professional services.</p></blockquote>
+              <figcaption class="person"><img src="img/testimonials/Zeeshan.jpeg" alt="" loading="lazy" width="55" height="55"><span><strong class="person-name">Zeeshan Shahid</strong>Colleague</span></figcaption>
+            </figure>
+            <figure class="slide" aria-roledescription="slide" aria-label="11 of 11">
+              <blockquote class="slide-quote"><p>He has the best problem solving techniques that make him unique.</p></blockquote>
+              <figcaption class="person"><img src="img/testimonials/usman.jpeg" alt="" loading="lazy" width="55" height="55"><span><strong class="person-name">Usman Ali</strong>Colleague</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="carousel-foot grid">
+            <div class="testi-progress" aria-hidden="true"><span class="testi-bar"></span></div>
+            <div class="testi-people" role="group" aria-label="Choose a recommendation"></div>
+            <div class="testi-controls">
+              <span class="testi-count"><span class="testi-index">01</span> / 11</span>
+              <button class="testi-btn" type="button" data-dir="-1" aria-label="Previous recommendation">←</button>
+              <button class="testi-btn" type="button" data-dir="1" aria-label="Next recommendation">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-grid grid">
+        <div>
+          <h2 id="contact-title" class="contact-title">Let's make your next game.</h2>
+          <p class="contact-intro">Hiring for Unity, multiplayer or XR work, or just want to talk games? Email me or use the form.</p>
+          <a class="contact-email" href="mailto:hassansohail@live.com">hassansohail@live.com</a>
+          <ul class="contact-links">
+            <li><a href="https://www.linkedin.com/in/mian-hassan-sohail/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a></li>
+            <li><a href="https://github.com/HassanSohail000" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a></li>
+            <li><a href="https://drive.google.com/file/d/1YBHOxg4taBmkWxgwR0Iu7D_JRCxkXP0E/view?usp=sharing" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>CV (PDF)</a></li>
+          </ul>
+        </div>
+
+        <form class="form" id="contact-form" action="https://formspree.io/f/xyzwqpjw" method="POST">
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field full"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required></div>
+          <div class="field full"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
+          <button class="btn btn-ink" type="submit">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p class="footer-mark">Hassan Sohail</p>
+      <p>Unity Lead at Titanz Games, based in Lahore, Pakistan. © <span id="year">2026</span></p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!--================ End Skills Area =================-->
-
-<!--================ Start Timeline Area =================-->
- <section class="timeline_section" id="experience"style="padding-bottom:100px" >
-    <div  class="main_title">
-      <h2 style="padding-bottom:20px">My Journey</h2>
-    </div>
-
-    <div class="timeline">
-      
-      <div class="timeline-item">
-        <span class="dot"></span>
-        <div class="timeline-card top">
-          <h4>2013 – 2017</h4>
-          <p><strong>University of South Asia</strong></p>
-          <p>BSCS (3.75/4.00)</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <span class="dot"></span>
-        <div class="timeline-card bottom">
-          <h4>APR 2017 – JAN 2018</h4>
-          <p><strong>ArcVision</strong></p>
-          <p>Unity Developer</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <span class="dot"></span>
-        <div class="timeline-card top">
-          <h4>JULLY 2018 – FEB 2019</h4>
-          <p><strong>ICAW</strong></p>
-          <p>Unity Developer</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <span class="dot"></span>
-        <div class="timeline-card bottom">
-          <h4>APR 2019 – JUN 2022</h4>
-          <p><strong>Raven Interactive</strong></p>
-          <p>Lead Unity Developer</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <span class="dot"></span>
-        <div class="timeline-card top">
-          <h4>JULLY 2022 – Present</h4>
-          <p><strong>Noborderz Innovations Ltd</strong></p>
-          <p>Senior Developer</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-<!--================ End Timeline Area =================-->
-
-	<!--================ End Brand Area =================-->
-
-	<!--================Start Portfolio Area =================-->
-	<section class="portfolio_area" id="portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="main_title text-left">
-						<h2>Projects</h2>
-					</div>
-				</div>
-			</div>
-			<div class="filters portfolio-filter">
-				<ul>
-					<li class="active" data-filter="*">all</li>
-					<li data-filter=".popular">popular</li>
-					<li data-filter=".latest">latest</li>
-					<li data-filter=".vr">VR</li>
-					<li data-filter=".mobile">Mobile</li>
-					<li data-filter=".metaverse"Metaverse</li>
-				</ul>
-			</div>
-
-			<div class="filters-content">
-				<div class="portfolio-carousel-container">
-					<div class="portfolio-carousel-wrapper">
-						<div class="portfolio-carousel-track">
-							<!-- Items will be dynamically inserted here by JavaScript -->
-							<div class="portfolio_item all latest popular vr mobile metaverse">
-								<div class="portfolio_box">
-									<div class="single_portfolio">
-										<a href="https://xana.net" target="_blank" rel="noopener noreferrer">
-											<video class="img-fluid w-100" src="img/portfolio/v1.mp4" autoplay muted loop playsinline></video>
-										</a>
-									</div>
-								</div>
-								<div class="short_info">
-									<h4><a href="https://xana.net" target="_blank" rel="noopener noreferrer" style="padding-top: 5px">XANA</a></h4>
-									<p>Metaverse, Multiplayer, Web3, VR, WebGl, Mobile, PC</p>
-								</div>
-							</div>
-							<div class="portfolio_item all popular mobile">
-								<div class="portfolio_box">
-									<div class="single_portfolio">
-										<a href="https://play.google.com/store/apps/details?id=com.shockwavegames.car.dealer.job.simulator" target="_blank" rel="noopener noreferrer">
-											<img class="img-fluid w-100" src="img/portfolio/p2.gif" alt="Car Dealership Simulator">
-										</a>
-									</div>
-								</div>
-								<div class="short_info">
-									<h4><a href="https://play.google.com/store/apps/details?id=com.shockwavegames.car.dealer.job.simulator" target="_blank" rel="noopener noreferrer">Car Dealership Simulator</a></h4>
-									<p>Simulation, Stertegy, Bussiness</p>
-								</div>
-							</div>
-							<div class="portfolio_item all latest vr">
-								<div class="portfolio_box">
-									<div class="single_portfolio">
-										<a href="#" target="_blank" rel="noopener noreferrer">
-											<img class="img-fluid w-100" src="img/portfolio/p5.png" alt="ARC Vision">
-										</a>
-									</div>
-								</div>
-								<div class="short_info">
-									<h4><a href="#" target="_blank" rel="noopener noreferrer">ARC Vision</a></h4>
-									<p>VR, Simulation, Architecture</p>
-								</div>
-							</div>
-							<div class="portfolio_item all popular vr">
-								<div class="portfolio_box">
-									<div class="single_portfolio">
-										<a href="#" target="_blank" rel="noopener noreferrer">
-											<img class="img-fluid w-100" src="img/portfolio/p4.png" alt="Monster Hunter VR">
-										</a>
-									</div>
-								</div>
-								<div class="short_info">
-									<h4><a href="#" target="_blank" rel="noopener noreferrer">Monster Hunter VR</a></h4>
-									<p>VR, Action, Shooting, Horror</p>
-								</div>
-							</div>
-							<div class="portfolio_item all latest mobile">
-								<div class="portfolio_box">
-									<div class="single_portfolio">
-										<a href="#" target="_blank" rel="noopener noreferrer">
-											<img class="img-fluid w-100" src="img/portfolio/p6.gif" alt="Penpenz">
-										</a>
-									</div>
-								</div>
-								<div class="short_info">
-									<h4><a href="#" target="_blank" rel="noopener noreferrer">Penpenz</a></h4>
-									<p>Metaverse, Party Game, Web3, Racing</p>
-								</div>
-							</div>
-							<div class="portfolio_item all popular mobile">
-								<div class="portfolio_box">
-									<div class="single_portfolio">
-										<a href="https://play.google.com/store/apps/details?id=com.shockwavegames.car.thief.simulator" target="_blank" rel="noopener noreferrer">
-											<img class="img-fluid w-100" src="img/portfolio/p7.gif" alt="Car Thief Simulator">
-										</a>
-									</div>
-								</div>
-								<div class="short_info">
-									<h4><a href="https://play.google.com/store/apps/details?id=com.shockwavegames.car.thief.simulator" target="_blank" rel="noopener noreferrer">Car Thief Simulator Race Games</a></h4>
-									<p> Simulation, Action, Racing</p>
-								</div>
-							</div>
-							<div class="portfolio_item all latest vr">
-								<div class="portfolio_box">
-									<div class="single_portfolio">
-										<a href="#" target="_blank" rel="noopener noreferrer">
-											<img class="img-fluid w-100" src="img/portfolio/p6.png" alt="VR RC with Leap motion">
-										</a>
-									</div>
-								</div>
-								<div class="short_info">
-									<h4><a href="#" target="_blank" rel="noopener noreferrer">VR RC with Leap motion</a></h4>
-									<p>VR, Simulation, Leapmotion, Remote Control</p>
-								</div>
-							</div>
-							<div class="portfolio_item all latest mobile">
-								<div class="portfolio_box">
-									<div class="single_portfolio">
-										<a href="#" target="_blank" rel="noopener noreferrer">
-											<img class="img-fluid w-100" src="img/portfolio/p8.gif" alt="Crypto Mining PC Builder Sim">
-										</a>
-									</div>
-								</div>
-								<div class="short_info">
-									<h4><a href="#" target="_blank" rel="noopener noreferrer">Crypto Mining PC Builder Sim</a></h4>
-									<p> Simulation, RPG, Crypto Simulation</p>
-								</div>
-							</div>
-							<div class="portfolio_item all latest popular mobile">
-								<div class="portfolio_box">
-									<div class="single_portfolio">
-										<a href="https://play.google.com/store/apps/details?id=com.shockwavegames.epicbattle.worldofwar" target="_blank" rel="noopener noreferrer">
-											<video class="img-fluid w-100" src="img/portfolio/WarEpic.mp4" autoplay muted loop playsinline></video>
-										</a>
-									</div>
-								</div>
-								<div class="short_info">
-									<h4><a href="https://play.google.com/store/apps/details?id=com.shockwavegames.epicbattle.worldofwar" target="_blank" rel="noopener noreferrer">Epic War Simulator Battle Game</a></h4>
-									<p>Simulation, Stegartgy, Action, RPG</p>
-								</div>
-							</div>
-							<div class="portfolio_item all latest popular mobile">
-								<div class="portfolio_box">
-									<div class="single_portfolio">
-										<a href="https://play.google.com/store/apps/details?id=com.shockwavegames.paintball.battle.arena" target="_blank" rel="noopener noreferrer">
-											<video class="img-fluid w-100" src="img/portfolio/Paintball.mp4" autoplay muted loop playsinline></video>
-										</a>
-									</div>
-								</div>
-								<div class="short_info">
-									<h4><a href="https://play.google.com/store/apps/details?id=com.shockwavegames.paintball.battle.arena" target="_blank" rel="noopener noreferrer">
-									Paintball Battle Arena 5v5 PVP</a></h4>
-									<p>Shooting, Action, RPG </p>
-								</div>
-							</div>
-							<div class="portfolio_item all latest popular mobile">
-								<div class="portfolio_box">
-									<div class="single_portfolio">
-										<a href="https://play.google.com/store/apps/details?id=com.shockwavegames.border.patrol.police.simulator" target="_blank" rel="noopener noreferrer">
-											<video class="img-fluid w-100" src="img/portfolio/border.mp4" autoplay muted loop playsinline></video>
-										</a>
-									</div>
-								</div>
-								<div class="short_info">
-									<h4><a href="https://play.google.com/store/apps/details?id=com.shockwavegames.border.patrol.police.simulator" target="_blank" rel="noopener noreferrer">Border Patrol Police Game</a></h4>
-									<p>Simulation, Action, Shooting</p>
-								</div>
-							</div>
-							<div class="portfolio_item all latest popular mobile">
-								<div class="portfolio_box">
-									<div class="single_portfolio">
-										<a href="https://play.google.com/store/apps/details?id=com.blackfootgames.blade.spin.battle.arena" target="_blank" rel="noopener noreferrer">
-											<video class="img-fluid w-100" src="img/portfolio/Spinner.mp4" autoplay muted loop playsinline></video>
-										</a>
-									</div>
-								</div>
-								<div class="short_info">
-									<h4><a href="https://play.google.com/store/apps/details?id=com.blackfootgames.blade.spin.battle.arena" target="_blank" rel="noopener noreferrer">Blade Fidget Spinner Arena</a></h4>
-									<p>Arcade, Action, mobile</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="portfolio-dots-container"></div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================End Portfolio Area =================-->
-
-	<!--================ Start Testimonial Area =================-->
-	<div class="testimonial_area section_gap_bottom" id="testimonials">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 text-center">
-					<div class="main_title">
-						<h2>What other say about me</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="testi_slider owl-carousel">
-        			<div class="testi_item">
-        				<div class="row">
-        					<div class="col-lg-4">
-        						<img src="img/testimonials/Zeeshan.jpeg" alt="">
-        					</div>
-        					<div class="col-lg-8">
-        						<div class="testi_text">
-        							<h4>Zeeshan Shahid</h4>
-									<p>Hassan is an expert in his field and a complete package for anyone who need professional services. </p>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="testi_item">
-						<div class="row">
-							<div class="col-lg-4">
-							<img src="img/testimonials/waqas.jpg" alt="">
-							</div>
-							<div class="col-lg-8">
-							<div class="testi_text testimonial-text-container" id="testimonial">
-								<h4>Waqas Ahmed</h4>
-								<p>
-								I highly recommend Hassan bhai, having had the pleasure of working closely with him for over two years. 
-								Throughout our time together, I’ve consistently been impressed by his skill set and ability to tackle challenges. 
-								He’s not only highly skilled in his domain but is also adept at offering multiple solutions to a single problem, 
-								ensuring that the best course of action is always taken.
-								What sets Hassan Bhai apart is his commitment to staying up-to-date with the latest IT news and trends. 
-								This has proven invaluable, as he consistently delivers projects on time, regardless of additional requests 
-								or unexpected hurdles. His expertise spans beyond the basics, with strong working knowledge in areas such as 
-								Photoshop, HTML, CSS, and more.
-								In summary, Hassan Bhai is a dedicated professional who excels in both technical and creative domains. 
-								I highly recommend him for any role that requires a mix of innovation, expertise, and reliability.
-								</p>
-								<span class="show-more" onclick="toggleTestimonial(this)">Show more</span>
-							</div>
-							</div>
-						</div>
-        			</div>
-        			<div class="testi_item">
-						<div class="row">
-							<div class="col-lg-4">
-							<img src="img/testimonials/OSama.jpeg" alt="">
-							</div>
-							<div class="col-lg-8">
-							<div class="testi_text testimonial-text-container" id="testimonial">
-								<h4>Osama Anwar</h4>
-								<p>
-								I had the pleasure of working alongside Hassan at Raven Games, where his expertise as a Senior Game Developer, particularly in Unity, consistently stood out. Hassan's deep understanding of game development principles and ability to apply them creatively in Unity was impressive. His technical skills are top-notch, but his team spirit and problem-solving abilities truly set him apart.Hassan's skill set and professional attitude would be an asset to any team, and I wholeheartedly recommend him to any organization looking for a talented and dedicated game developer.
-								</p>
-								<span class="show-more" onclick="toggleTestimonial(this)">Show more</span>
-							</div>
-							</div>
-						</div>
-        			</div>
-        			<div class="testi_item">
-						<div class="row">
-							<div class="col-lg-4">
-							<img src="img/testimonials/hamza.png" alt="">
-							</div>
-							<div class="col-lg-8">
-							<div class="testi_text testimonial-text-container" id="testimonial">
-								<h4>Hamza Abbasi</h4>
-								<p>I am pleased to recommend Hassan Sohail, whose skills and work ethic have been nothing short of exemplary. As a Project Manager, I have had the pleasure of working with Hassan and have consistently been impressed by his exceptional problem-solving abilities, discipline, and punctuality.Hassan possesses remarkable problem-solving skills that have significantly contributed to the success of our projects. His ability to analyze complex issues and develop effective solutions has been a key asset to our team.In addition to his technical skills, Hassan demonstrates outstanding discipline and punctuality. He consistently completes tasks on time and maintains a high standard of work, which has earned him the respect and trust of his colleagues and clients alike.Hassan's dedication and reliability make him a valuable team member, and I am confident that he will excel in any future role or project he undertakes.								</p>
-								<span class="show-more" onclick="toggleTestimonial(this)">Show more</span>
-							</div>
-							</div>
-						</div>
-        			</div>
-        			<div class="testi_item">
-						<div class="row">
-							<div class="col-lg-4">
-							<img src="img/testimonials/Sannan.jpeg" alt="">
-							</div>
-							<div class="col-lg-8">
-							<div class="testi_text testimonial-text-container" id="testimonial">
-								<h4>Sannan Zahid</h4>
-								<p>I had the pleasure of working with Mian Hassan Sohail at NOBORDERZ INNOVATIONS, where he served as a Senior Unity Game Developer. Hassan is, without a doubt, one of the most talented and dedicated developers I have ever worked with.
-
-								Hassan’s expertise in Unity and C# is exceptional. He has a remarkable ability to tackle complex problems and deliver innovative solutions, consistently producing high-quality work. His skills in performance optimization, game mechanics, and graphics integration have significantly contributed to the success of our projects.
-
-								Beyond his technical skills, Hassan is a natural leader and an excellent mentor. He has a unique ability to guide and inspire developers, fostering a collaborative and productive work environment. His communication skills are top-notch, allowing him to effectively convey complex technical concepts to both technical and non-technical stakeholders.
-
-								Hassan’s creativity and passion for game development are evident in every project he undertakes. He goes above and beyond to ensure that our games are not only functional but also engaging and visually stunning. His dedication to continuous learning and improvement keeps him at the forefront of the latest industry trends and technologies.
-
-								Hassan is an outstanding Unity game developer with a rare combination of technical expertise, leadership qualities, and creative vision. He would be an invaluable asset to any team, and I highly recommend him for any position that requires a skilled and dedicated developer.</p>
-								<span class="show-more" onclick="toggleTestimonial(this)">Show more</span>
-							</div>
-							</div>
-						</div>
-        			</div>
-        			<div class="testi_item">
-						<div class="row">
-							<div class="col-lg-4">
-							<img src="img/testimonials/usman.jpeg" alt="">
-							</div>
-							<div class="col-lg-8">
-							<div class="testi_text" id="testimonial">
-								<h4>USMAN ALI</h4>
-								<p>He has the best problem solving techniques that make him unique.</p>
-							</div>
-							</div>
-						</div>
-        			</div>
-					<div class="testi_item">
-						<div class="row">
-							<div class="col-lg-4">
-							<img src="img/testimonials/1744558109275.jpeg" alt="">
-							</div>
-							<div class="col-lg-8">
-							<div class="testi_text testimonial-text-container" id="testimonial">
-								<h4>Muhammad Mubasher</h4>
-								<p>I had the pleasure of working with Hassan, and I can confidently say he is an exceptional game developer. His expertise in both mobile game development and cutting-edge metaverse projects is truly impressive. Hassan brings a creative and innovative approach to every project, ensuring that the user experience is engaging and immersive.Hassan's contributions to our metaverse project were invaluable. His deep understanding of virtual environments, combined with his technical skills, allowed us to create a seamless and interactive experience. He was instrumental in designing key aspects of the project, from concept to execution, and his ability to solve complex problems with elegant solutions made a significant impact.In addition to his work on the metaverse, Hassan has developed numerous mobile games that are not only technically sound but also highly engaging for players. His attention to detail, commitment to quality, and passion for gaming are evident in every project he undertakes.Hassan is a true professional, always willing to collaborate and share his knowledge with the team. His ability to stay ahead of industry trends and his dedication to continuous learning make him an asset to any organization. I highly recommend Hassan for any game development role, especially those involving innovative and forward-thinking projects like the metaverse.</p>
-								<span class="show-more" onclick="toggleTestimonial(this)">Show more</span>
-							</div>
-							</div>
-						</div>
-        			</div>
-					<div class="testi_item">
-						<div class="row">
-							<div class="col-lg-4">
-							<img src="img/testimonials/Zubair.png" alt="">
-							</div>
-							<div class="col-lg-8">
-							<div class="testi_text testimonial-text-container" id="testimonial">
-								<h4>Zubair Hayat</h4>
-								<p>I am thrilled to recommend Hassan Sohail for his outstanding skills and contributions in Unity game development. Having worked closely with Hassan as both a colleague and a senior resource, I've consistently been impressed by his exceptional ability to quickly grasp complex concepts and build robust, logical solutions.Hassan has an incredible knack for picking up new technologies and methodologies at lightning speed, which has been invaluable in our fast-paced development environment. His deep understanding of game mechanics and development principles is matched only by his willingness to lend a helping hand whenever needed.What truly sets Hassan apart is not just his technical acumen but his collaborative spirit. He is always ready to offer support, share insights, and contribute to team success with enthusiasm and professionalism. His problem-solving skills and innovative approach have significantly enhanced our projects, making him an indispensable asset to our team.I wholeheartedly recommend Hassan Sohail for any role in Unity game development. His expertise, combined with his proactive and supportive nature, makes him an exceptional choice for any organization looking to excel in the gaming industry.</p>
-								<span class="show-more" onclick="toggleTestimonial(this)">Show more</span>
-							</div>
-							</div>
-						</div>
-        			</div>
-					<div class="testi_item">
-						<div class="row">
-							<div class="col-lg-4">
-							<img src="img/testimonials/anees.jpeg" alt="">
-							</div>
-							<div class="col-lg-8">
-							<div class="testi_text testimonial-text-container" id="testimonial">
-								<h4>Anees Khan</h4>
-								<p>I had the pleasure of working closely with Hassan, and I can confidently say that he is an exceptional professional in the gaming industry. His expertise spans across mobile AR, VR, hyper-casual, and hybrid casual games, where he has consistently demonstrated an impressive level of technical skill and creativity.Hassan is not only a genius when it comes to game development, but he is also incredibly punctual and reliable. His ability to deliver high-quality work on time is truly commendable. Whether it's solving complex technical challenges or innovating new gaming concepts, Hassan approaches every task with precision and enthusiasm.His deep understanding of the gaming industry, coupled with his hands-on experience, makes him a valuable asset to any project. I highly recommend Hassan for any role or collaboration in the gaming sector—his talent and work ethic are unmatched.</p>
-								<span class="show-more" onclick="toggleTestimonial(this)">Show more</span>
-							</div>
-							</div>
-						</div>
-        			</div>
-					<div class="testi_item">
-						<div class="row">
-							<div class="col-lg-4">
-							<img src="img/testimonials/ali.jpeg" alt="">
-							</div>
-							<div class="col-lg-8">
-							<div class="testi_text testimonial-text-container" id="testimonial">
-								<h4>Ali hamza</h4>
-								<p>I had the privilege of working closely with Mian Hassan Sohail for almost 2 years as part of our game development team, and I can confidently say that he is one of the most skilled and dedicated professionals I've ever encountered. His expertise in Unity, C#, and logic building is unparalleled, making him an invaluable asset to our projects. Mian Hassan has a deep understanding of APIs, and his ability to handle complex technical challenges, such as crashes and ANRs, is nothing short of remarkable. His work on multiplayer games and NFTs has been groundbreaking, demonstrating both his technical acumen and his ability to stay ahead of industry trends.Beyond his technical skills, Hassan Sohail is incredibly helpful, always willing to share his knowledge and assist others. He’s a smart worker, capable of delivering high-quality results with efficiency and precision. His good behavior and team-player attitude have made him a joy to work with, and his ability to step up as a "one-man army" when needed has saved the day more than once.I highly recommend Mian Hassan Sohail to anyone looking for a top-tier game developer. His blend of technical expertise, problem-solving skills, and collaborative spirit makes him a true standout in the industry.</p>
-								<span class="show-more" onclick="toggleTestimonial(this)">Show more</span>
-							</div>
-							</div>
-						</div>
-        			</div>
-					<div class="testi_item">
-						<div class="row">
-							<div class="col-lg-4">
-							<img src="img/testimonials/1742742326239.jpeg" alt="">
-							</div>
-							<div class="col-lg-8">
-							<div class="testi_text testimonial-text-container" id="testimonial">
-								<h4>Muhammad Hassaan</h4>
-								<p>I had the pleasure of working with Mr. Hassan Sohail at Raven Interactive.	He was a hardworking, dedicated and very talented team lead. He mentored me and taught me a lot. He has amazing development and problem solving skills.</p>
-								<span class="show-more" onclick="toggleTestimonial(this)">Show more</span>
-							</div>
-							</div>
-						</div>
-        			</div>
-        		</div>
-			</div>
-		</div>
-	</div>
-	<!--================ End Testimonial Area =================-->
-
-	
-	<!--================ Start Contact Area =================-->
-	<section class="contact_area section_gap" style="padding:0px" id="contact">
-	  <div class="container">
-		<div class="row justify-content-center">
-		  <div class="col-lg-8">
-			<div class="main_title text-center">
-			  <h2>Contact Me</h2>
-			  <p>Feel free to reach out for collaborations or just a friendly hello!</p>
-			</div>
-			<form action="https://formspree.io/f/xyzwqpjw" method="POST" class="row contact_form" id="contactForm">
-			  <div class="col-md-6 form-group">
-				<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
-			  </div>
-			  <div class="col-md-6 form-group">
-				<input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
-			  </div>
-			  <div class="col-12 form-group">
-				<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-			  </div>
-			  <div class="col-12 form-group">
-				<textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
-			  </div>
-			  <div class="col-12 text-center">
-				<button type="submit" class="primary_btn"><span>Send Message</span></button>
-			  </div>
-			</form>
-			<div id="contact-success" class="alert alert-success text-center" style="display:none; margin-top:20px;">
-			  Thank you! Your message has been sent.
-			</div>
-
-		  </div>
-		</div>
-	  </div>
-	</section>
-<!--================ End Contact Area =================-->
-
-<!--================Footer Area =================-->
-	<footer class="footer_area" style="padding:50px">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-12">
-					<div class="footer_top flex-column">
-						<div class="footer_logo">
-							<a href="#">
-								<img src="img/logo.png" alt="">
-							</a>
-							<h4>Follow Me</h4>
-						</div>
-						<div class="footer_social">
-							<a href="https://www.linkedin.com/in/mian-hassan-sohail/"><i class="fa fa-linkedin"></i></a>
-							<a href="#" onclick="openLinks()"> <i class="fa fa-github"></i> </a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="js/mail-script.js"></script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
-	
-	<!-- Custom Carousel Script -->
-<script>
-	function openLinks() {
-		window.open('https://github.com/HassanSohail000', '_blank');
-		window.open('https://github.com/MianHassanSohail', '_blank');
-	  }
-	$(document).ready(function() {
-		// Check if the carousel container exists
-		if ($('.portfolio-carousel-container').length) {
-
-			const track = $('.portfolio-carousel-track');
-			const dotsContainer = $('.portfolio-dots-container');
-			const filters = $('.filters li');
-			const itemsPerPage = 6; // 3 columns x 2 rows
-
-			// Detach all items to manage them in memory.
-			const allItems = track.children('.portfolio_item').detach();
-
-			let currentPage = 0;
-			let pageCount = 0;
-			let autoScrollInterval;
-
-			function goToPage(pageIndex) {
-				// Loop back to start/end if out of bounds
-				if (pageIndex >= pageCount) {
-					pageIndex = 0;
-				} else if (pageIndex < 0) {
-					pageIndex = pageCount - 1;
-				}
-					
-				// Move the track
-				track.css('transform', 'translateX(-' + (pageIndex * 100) + '%)');
-					
-				// Update active dot
-				$('.portfolio-dot').removeClass('active');
-				$('.portfolio-dot').eq(pageIndex).addClass('active');
-					
-				currentPage = pageIndex;
-			}
-
-			function startAutoScroll() {
-				/*
-				stopAutoScroll();
-				if (pageCount > 1) {
-					autoScrollInterval = setInterval(function() {
-						goToPage(currentPage + 1);
-					}, 15000); // Change page every 5 seconds
-				}
-				*/
-			}
-
-			function stopAutoScroll() {
-				clearInterval(autoScrollInterval);
-			}
-
-			// Main function to build/rebuild the carousel
-			function updateCarousel(filter = '*') {
-				stopAutoScroll();
-
-				// 1. Filter items
-				const filteredItems = (filter === '*') ? allItems : allItems.filter(filter);
-					
-				// 2. Clear current content
-				track.empty();
-				dotsContainer.empty();
-
-				if (filteredItems.length === 0) {
-					track.append('<p class="no-projects-found">No projects found for this category.</p>');
-					pageCount = 0;
-					return;
-				}
-
-				// 3. Calculate pagination
-				pageCount = Math.ceil(filteredItems.length / itemsPerPage);
-
-				// 4. Create pages and add items
-				for (let i = 0; i < pageCount; i++) {
-					const page = $('<div class="portfolio-page"></div>');
-					const start = i * itemsPerPage;
-					const end = start + itemsPerPage;
-					// Clone items before appending to avoid issues with jQuery objects
-					const itemsForPage = filteredItems.slice(start, end).clone();
-					page.append(itemsForPage);
-					track.append(page);
-				}
-
-				// 5. Create dots if more than one page
-				if (pageCount > 1) {
-					for (let i = 0; i < pageCount; i++) {
-						dotsContainer.append(`<span class="portfolio-dot" data-index="${i}"></span>`);
-					}
-				}
-					
-				// 6. Re-bind dot events
-				$('.portfolio-dot').on('click', function() {
-					const pageIndex = $(this).data('index');
-					goToPage(pageIndex);
-					startAutoScroll(); // Reset timer
-				});
-					
-				// 7. Go to first page and start scroll
-				goToPage(0);
-				startAutoScroll();
-			}
-
-			// Filter click event
-			filters.on('click', function() {
-				const filter = $(this).data('filter');
-					
-				filters.removeClass('active');
-				$(this).addClass('active');
-
-				updateCarousel(filter);
-			});
-
-			// Pause on hover
-			$('.portfolio-carousel-container').on('mouseenter', stopAutoScroll);
-			$('.portfolio-carousel-container').on('mouseleave', startAutoScroll);
-
-			// Initial setup on page load
-			updateCarousel('*');
-		}
-	});
-	
-	$(document).ready(function() {
-	var $track = $('.skills-carousel-track');
-	var scrollSpeed = 0.5; // pixels per frame, adjust for speed
-	var pos = 0;
-
-	// Calculate the width of the original set of images (half the track)
-	var images = $track.children('img');
-	var originalCount = images.length / 2;
-	var originalWidth = 0;
-	images.slice(0, originalCount).each(function() {
-	originalWidth += $(this).outerWidth(true);
-	});
-
-	function autoScroll() {
-		pos -= scrollSpeed;
-		if (Math.abs(pos) >= originalWidth) {
-		  pos = 0; // Reset position instantly for seamless loop
-		}
-		$track.css('transform', 'translateX(' + pos + 'px)');
-		requestAnimationFrame(autoScroll);
-	}
-
-	  autoScroll();
-	});
-$(document).ready(function() {
-	$(function() {
-$('#contactForm').on('submit', function(e) {
-e.preventDefault();
-var $form = $(this);
-var $btn = $form.find('button[type="submit"]');
-$btn.prop('disabled', true);
-
-$.ajax({
-	url: $form.attr('action'),
-	method: 'POST',
-	data: $form.serialize(),
-	dataType: 'json',
-	success: function() {
-	$('#contact-success').fadeIn();
-	$form[0].reset();
-	$btn.prop('disabled', false);
-	},
-	error: function() {
-	$('#contact-success').removeClass('alert-success').addClass('alert-danger').text('Sorry, there was an error. Please try again later.').fadeIn();
-	$btn.prop('disabled', false);
-	}
-});
-});
-});
-
-		  // Smooth scroll for navbar menu links
-		  $('.menu_nav .nav-link').on('click', function(event) {
-			if (this.hash && $(this.hash).length) {
-			  event.preventDefault();
-			  var target = this.hash;
-			  var $target = $(target);
-
-			  $('html, body').animate({
-				scrollTop: $target.offset().top - 70
-			  }, 600, 'swing');
-			}
-		  });
-
-		  // Section highlighting on scroll
-		  var sectionIds = [];
-		  $('.menu_nav .nav-link').each(function() {
-			var href = $(this).attr('href');
-			if (href.startsWith('#') && $(href).length) {
-			  sectionIds.push(href);
-			}
-		  });
-
-		  function onScroll() {
-			var scrollPos = $(window).scrollTop() + 80; // 80px offset for header
-			var currentSection = sectionIds[0];
-
-			for (var i = 0; i < sectionIds.length; i++) {
-			  var section = $(sectionIds[i]);
-			  if (section.length && section.offset().top <= scrollPos) {
-				currentSection = sectionIds[i];
-			  }
-			}
-
-			$('.menu_nav .nav-item').removeClass('active');
-			$('.menu_nav .nav-link[href="' + currentSection + '"]').parent().addClass('active');
-		  }
-
-		  $(window).on('scroll', onScroll);
-		  onScroll(); // Initial call
-		});
-
-	$(document).ready(function() {
-	// Smooth scroll for navbar menu links
-	$('.menu_nav .nav-link').on('click', function(event) {
-		// Only handle anchor links with hashes
-		if (this.hash && $(this.hash).length) {
-			event.preventDefault();
-			var target = this.hash;
-			var $target = $(target);
-
-			// Animate scroll with offset for fixed header (adjust 70 if needed)
-			$('html, body').animate({
-			scrollTop: $target.offset().top - 70
-			}, 600, 'swing');
-		}
-	});
-	});
-	 function toggleTestimonial(element) {
-	  const container = element.closest('.testimonial-text-container');
-	  const toggleBtn = container.querySelector('.show-more');
-
-	  container.classList.toggle('expanded');
-
-	  if (container.classList.contains('expanded')) {
-		toggleBtn.textContent = 'Show less';
-	  } else {
-		toggleBtn.textContent = 'Show more';
-	  }
-	}
-
-</script>
+  <script type="module" src="assets/js/main.js"></script>
 </body>
-
 </html>
